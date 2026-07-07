@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>森の雑貨店｜おすすめアイテム</title>
+  <link rel="stylesheet" href="design-system.css">
+  <style>
+    body { margin: 0; font-family: sans-serif; background: var(--color-bg); }
+    .site-header { background: var(--color-surface); border-bottom: 2px solid var(--color-border); padding: 20px; }
+    .logo { font-size: 22px; font-weight: 700; color: var(--color-primary); }
+    .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+    .product-list { display: flex; flex-wrap: wrap; gap: 24px; }
+    .site-footer { text-align: center; color: var(--color-text-muted); padding: 40px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <span class="logo">森の雑貨店</span>
+  </header>
+
+  <main class="container">
+    <h1>おすすめアイテム</h1>
+    <div class="product-list">
+      <article class="card">
+        <div class="card__thumb" style="height:160px; background:#fef3c7;"></div>
+        <div class="card__body">
+          <h2 class="card__title text-title">手彫りの木製マグ</h2>
+          <p class="card__desc text-body">天然木を使用した、温かみのあるマグカップです。</p>
+          <p class="card__price text-price">¥2,500</p>
+          <button class="btn btn--primary">購入する</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__thumb" style="height:160px; background:#dcfce7;"></div>
+        <div class="card__body">
+          <h2 class="card__title text-title">季節のドライフラワー</h2>
+          <p class="card__desc text-body">お部屋に彩りを添える、季節の草花セット。</p>
+          <p class="card__price text-price">¥1,800</p>
+          <button class="btn btn--primary">購入する</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__thumb" style="height:160px; background:#f3f4f6;"></div>
+        <div class="card__body">
+          <h2 class="card__title text-title">限定キャンドル</h2>
+          <p class="card__desc text-body">森の香りのアロマキャンドル。※完売しました。</p>
+          <p class="card__price text-price">¥3,200</p>
+          <button class="btn btn--disabled" disabled>品切れ</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 森の雑貨店</p>
+  </footer>
+</body>
+</html>
